@@ -1,0 +1,63 @@
+body{
+    background-color: #f5f5f5
+}
+h1{
+    color: #3a3a3a;
+}
+.profile-card{
+    height: 600px;
+    width: 700px;
+    margin: auto;
+    border-radius: 10px
+}
+.profile-card .card-header{
+    background-color: #2eca7f;
+    border-radius: 10px 10px 0 0 ;
+    padding: 40px 30px
+}
+.profile-card .card-header h2{
+    color: white;
+}
+.profile-card .card-header p{
+    color: white;
+}
+.profile-card .card-body{
+}
+.shadow{
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+}
+.padding{
+    padding: 20px;
+}
+
+.clear{
+    clear: both;
+}
+.col-left{
+    float: left;
+    width: 50%;
+}
+.col-right{
+    float: left;
+    width: 50%;
+}
+.img-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    background: url('./img/main_bg.png') 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
