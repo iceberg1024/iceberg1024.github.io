@@ -1,35 +1,58 @@
 body{
-    background-color: #f5f5f5
+    background-color: #f5f5f5;
+    margin: 40px;
 }
 h1{
     color: #3a3a3a;
+    font-size: 54px;
+    font-family: 'Montserrat', Helvetica, sans-serif
+}
+.header-name{
+    color: #3a3a3a;
+    font-size: 20px;
+    margin: 30px 0;
+    margin-left: 300px;
+    max-width: 1032px;
+    font-family: 'Montserrat', Helvetica, sans-serif
+}
+.header-name span{
+
+    color: #2eca7f;
+    font-size: 20px;
+    font-family: 'Montserrat', Helvetica, sans-serif
 }
 .profile-card{
-    height: 600px;
-    width: 700px;
+    height: 560px;
+    width: 1024px;
     margin: auto;
     border-radius: 10px
 }
 .profile-card .card-header{
     background-color: #2eca7f;
     border-radius: 10px 10px 0 0 ;
-    padding: 40px 30px
+    padding: 40px 30px;
+    height: 200px;
+    margin-left: 1px;
+
 }
 .profile-card .card-header h2{
     color: white;
+    font-size: 54px;
+    font-family: 'Montserrat', Helvetica, sans-serif
 }
 .profile-card .card-header p{
     color: white;
-}
-.profile-card .card-body{
+    font-size: 20px;
+    margin: -20px 150px 0;
+    font-family: 'Montserrat', Helvetica, sans-serif
+
 }
 .shadow{
-    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.2);
 }
 .padding{
     padding: 20px;
 }
-
 .clear{
     clear: both;
 }
@@ -42,12 +65,13 @@ h1{
     width: 50%;
 }
 .img-wrapper {
-    width: 150px;
-    height: 150px;
+    width: 280px;
+    height: 280px;
     margin: 0 auto;
     border-color: white;
     border-width: 5px;
     border-style: solid;
+
 }
 .img-wrapper img{
     width: 100%;
@@ -60,4 +84,38 @@ h1{
     position: absolute;
     left: 0;
     top: 0;
+}
+.title{
+    display: inline-block;
+    min-width: 120px;
+}
+.info{
+    list-style: none;
+    margin: 0px;
+}
+.info li{
+    margin: 6px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+.card-body .col-left{
+    margin: 10px 0 25px;
+}
+.card-body .col-left strong{
+    font-size: 20px;
+    font-family: monospace;
+}
+.card-body .col-left span{
+    color: #2eca7f;
+    font-family: 'Montserrat', Helvetica, sans-serif
+}
+.card-body .col-left p{
+    margin: 20px 0;
+    font-weight: 400;
+    font-family: 'Montserrat', Helvetica, sans-serif
+}
+.card-body .col-right{
+    margin-top: 10px;
+}
+.div{
+    display: block;
 }
