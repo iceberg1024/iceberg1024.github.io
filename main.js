@@ -12,12 +12,13 @@ Name.onclick = function namechange(){
     this.innerHTML="Xuesong Zhang";
 }
 }
-var showlink = document.querySelector('.img-wrapper');
-var git = document.querySelector('.github');
-    showlink.onmouseover=function show(){
-        git.style.display= inline;
+var myImage=document.querySelector('img');
+    myImage.onmouseover=function mover(){
+        var ghlink= document.getElementById('github');
+        ghlink.style.display='block';
     }
-    showlink.onmouseout=function hide(){
-        git.style.display= hide;
+    myImage.onmouseout=function mout(){
+        var ghlink= document.getElementById('github');
+        ghlink.style.display='none';
     }
 }
