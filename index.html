@@ -24,7 +24,7 @@
                  <div class="img-wrapper">
                      <img src="./img/photo.png" alt="my profile image" class="profile">
                  </div>
-                 <p class="github" style="display: none">
+                 <p id="github" style="display: none">
                      <a href="https://github.com/iceberg1024">https://github.com/iceberg1024/iceberg1024</a>
                  </p>
              </div>
@@ -33,15 +33,14 @@
                  <p>Web Designer</p>
              </div>
              <div class="clear"></div>
-             <div class="overlay">
 
-             </div>
       	     </div>
              <div class="card-body padding">
                  <div class="col-left">
-                     <strong>About</strong>
-                    <span><strong>Me</strong></span>
-                    <p>
+                     <h3 id="buttonme">
+                     <strong>About Me</strong>
+                </h3>
+                    <p id="aboutme">
                     Hello! I'm Xuesong Zhang.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                  </div>
                  <div class="col-right">
@@ -69,9 +68,26 @@
                      </ul>
                      </div>
                  </div>
+                 <button id="button" onclick="document.getElementById('myContactForm').style.display='block'">Contact me</button>
+                 <div id="myContactForm" class="modal" style="display:none">
+                     <form class="form animate" action="/action.php" method="post" >
+                         <div class="container shadow">
+                             <div class="CloseButton">
+                                 <span onclick="document.getElementById('myContactForm').style.display='none'" class="close" title="Close Modal">X</span>
+                             </div>
+                             Name <br> <input id="name" type="text" name="name" value=""><br>
+                             E-mail <br><input id="email" type="text" name="E-mail" value=""><br>
+                             Message <br><input id="message" type="text" name="Message" value=""><br>
+                             <button id="submit" type="button" name="submit">submit</button>
+                         </div>
+
+                     </form>
+                 </div>
              </div>
     </section>
     <script type="text/javascript" src='main.js'>
     </script>
+    <div class="overlay">
+    </div>
     </body>
 </html>

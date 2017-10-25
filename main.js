@@ -21,4 +21,23 @@ var myImage=document.querySelector('img');
         var ghlink= document.getElementById('github');
         ghlink.style.display='none';
     }
+
+var AboutMe = document.getElementById('buttonme');
+AboutMe.onclick = function contact(){
+    var x = document.getElementById('aboutme');
+    if (x.style.display==='none'){
+        x.style.display = 'block';
+    } else{
+        x.style.display = 'none';
+    }
+}
+var submitButton = document.getElementById('submit');
+submitButton.onclick = function submit(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    console.log(name);
+    console.log(email);
+    console.log(message);
+}
 }
